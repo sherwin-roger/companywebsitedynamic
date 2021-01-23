@@ -1,0 +1,18 @@
+{% extends "website/base.html" %}
+
+{% block content %}
+
+<div class="productcontent">    
+    <h1>Company people</h1>
+    <div class="productitems">
+        {% for company in companies %}
+        <div class="productitem"> 
+            <div class="itemimage">
+            <img class="itemimage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR23DQLxw3PaI3pGMak2zjv-6WHE7Ahl_AZg&usqp=CAU"  alt="product image">
+            </div>
+            <div class="itemname">{{company.peoplename}}</div>
+        </div>
+       {% endfor %}
+    </div>
+</div>
+{% endblock  %}
